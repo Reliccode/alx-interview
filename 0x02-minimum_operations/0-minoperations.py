@@ -3,6 +3,7 @@
 Minimum Operations module
 """
 
+
 def minOperations(n):
     """
     Calculates the fewest number of operations needed to result in exactly n H characters.
@@ -26,6 +27,7 @@ def minOperations(n):
         divisor += 1
 
     return operations
+
 
 if __name__ == "__main__":
     n = 4
