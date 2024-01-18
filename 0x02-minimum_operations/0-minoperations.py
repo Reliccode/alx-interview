@@ -6,7 +6,8 @@ Minimum Operations module
 
 def minOperations(n):
     """
-    Calculates the fewest number of operations needed to result in exactly n H characters.
+    Calculates the fewest number of operations needed to result in exactly n H
+    characters.
 
     Args:
         n (int): Number of H characters to achieve.
@@ -31,7 +32,9 @@ def minOperations(n):
 
 if __name__ == "__main__":
     n = 4
-    print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
+    print("Min # of operations to reach {} char: {}".format
+          (n, minOperations(n)))
 
     n = 12
-    print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
+    print("Min # of operations to reach {} char: {}".format
+          (n, minOperations(n)))
