@@ -1,53 +1,35 @@
-#!/usr/bin/env python3
-'''
-Min operations
-'''
-
+#!/usr/bin/python3
+"""
+Minimum Operations module
+"""
 
 def minOperations(n):
     """
-    Calculates the fewest number of operations needed to
-    result in exactly n H characters in the file.
+    Calculates the fewest number of operations needed to result in exactly n H characters.
 
-    Parameters:
-    - n (int): The target number of H characters.
+    Args:
+        n (int): Number of H characters to achieve.
 
     Returns:
-    - int: The minimum number of operations needed.
-    If n is impossible to achieve, returns 0.
+        int: Fewest number of operations needed, or 0 if impossible.
     """
-
-    if n <= 0:
+    if n <= 1:
         return 0
 
-    def prime_factors(num):
-        """
-        Finds the prime factors of a given number.
+    operations = 0
+    divisor = 2
 
-        Parameters:
-        - num (int): The number for which prime factors are to be found.
+    while n > 1:
+        while n % divisor == 0:
+            operations += divisor
+            n //= divisor
+        divisor += 1
 
-        Returns:
-        - list: List of prime factors.
-        """
-        factors = []
-        divisor = 2
-        while divisor * divisor <= num:
-            while (num % divisor) == 0:
-                factors.append(divisor)
-                num //= divisor
-            divisor += 1
-        if num > 1:
-            factors.append(num)
-        return factors
+    return operations
 
-    factors = prime_factors(n)
-    return sum(factors)
+if __name__ == "__main__":
+    n = 4
+    print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
 
-
-# Testing the unconventional solution
-n = 4
-print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
-
-n = 12
-print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
+    n = 12
+    print("Min # of operations to reach {} char: {}".format(n, minOperations(n)))
