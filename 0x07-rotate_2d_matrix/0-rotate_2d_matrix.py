@@ -11,12 +11,12 @@ def rotate_2d_matrix(matrix):
 
     # transpose matrix
     for i in range(n):
-        for j in range(i + 1, n):
+        for j in range(i, n):
             matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
 
     # reverse each row
-            for i in range(n):
-                matrix[i].reverse()
+    for row in matrix:
+        row.reverse()
 
 
 if __name__ == "--main__":
