@@ -23,6 +23,9 @@ def makeChange(coins, total):
     # If the target total is 0, no coins are needed
     if total == 0:
         return 0
+    
+    #sort coins in descending order
+    coins.sort(reverse=True)
 
     # Initialize an array to store the minimum number of coins needed for each
     # amount from 1 to total
