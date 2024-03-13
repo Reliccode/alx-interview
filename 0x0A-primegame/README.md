@@ -3,7 +3,9 @@
 <div align="center">
     <a href="#" style="background-color: #880808; color: white; padding: 10px 20px; border-radius: 20px; text-decoration: none; margin-right: 10px;">Algorithm</a>
     <a href="#" style="background-color: #880808; color: white; padding: 10px 20px; border-radius: 20px; text-decoration: none;">Python</a>
-</div> </br> </br>
+</div>  
+<br/><br/>
+
 
 
 
