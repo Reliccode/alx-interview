@@ -1,47 +1,11 @@
 # Prime Game
-
 </br>
 <div align="center">
     <a href="#" style="background-color: #880808; color: white; padding: 10px 20px; border-radius: 20px; text-decoration: none; margin-right: 10px;">Algorithm</a>
     <a href="#" style="background-color: #880808; color: white; padding: 10px 20px; border-radius: 20px; text-decoration: none;">Python</a>
 </div> </br> </br>
 
-<!-- Confetti Animation -->
-<div style="position: relative; overflow: hidden; width: 100%; height: 200px;">
-    <div id="confetti-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;"></div>
-    <style>
-        @keyframes confetti-fall {
-            0% { transform: translateY(-500px) rotate(0deg); }
-            100% { transform: translateY(2000px) rotate(360deg); }
-        }
 
-        .confetti {
-            width: 10px;
-            height: 10px;
-            background-color: #f39c12;
-            position: absolute;
-            top: 0;
-            left: 0;
-            animation: confetti-fall 8s infinite linear;
-            border-radius: 50%;
-            transform: rotateZ(360deg);
-        }
-    </style>
-    <script>
-        function createConfetti() {
-            const confettiContainer = document.getElementById('confetti-container');
-            for (let i = 0; i < 100; i++) {
-                const confetti = document.createElement('div');
-                confetti.classList.add('confetti');
-                confetti.style.left = Math.random() * 100 + '%';
-                confetti.style.animationDelay = Math.random() * 8 + 's';
-                confettiContainer.appendChild(confetti);
-            }
-        }
-
-        createConfetti();
-    </script>
-</div>
 
 This project is a Python implementation of a competitive game scenario involving prime numbers and strategic decision-making. In this game, two players, Maria and Ben, take turns removing prime numbers and their multiples from a set of consecutive integers. The player who cannot make a move loses the game. The implementation allows for multiple rounds of the game, with different values of `n` for each round.
 
@@ -127,6 +91,7 @@ Contributions to this project are welcome. If you have suggestions for improveme
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
 ## Author
 
